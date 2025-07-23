@@ -1,4 +1,5 @@
 using UnityEngine;
+using FGT.Prototypes.SimpleStateMachine;
 
 namespace FGT.Prototypes.SimpleStateMachine.Demo
 {
