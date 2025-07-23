@@ -1,0 +1,22 @@
+
+{
+    "name": "fgt.prototypes.statemachine",
+    "version": "1.0.0",
+    "displayName": "FGT - Prototypes - StateMachine",
+    "description": "Fast prototyping tool to add a simple finite state machine to your game prototype.",
+    "licensesUrl": "https://opensource.org/licenses/MIT",
+    "samples": [
+    {
+        "displayName": "Simple Player Example",
+        "description": "Example of a simple 2d Top down using the state machine.",
+        "path": "Samples~/Simple Player Example"
+    }
+ ],
+ "keywords": [
+    "FGT",
+    "prototypes",
+    "state",
+    "machine",
+    "ai"
+  ]
+}
