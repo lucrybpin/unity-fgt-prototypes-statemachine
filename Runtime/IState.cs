@@ -1,4 +1,4 @@
-namespace FGT.Prototypes.StateMachine
+namespace FGT.Prototypes.SimpleStateMachine
 {
     public interface IState
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FGT.Prototypes.StateMachine
+namespace FGT.Prototypes.SimpleStateMachine
 {
     public class StateMachine
     {
