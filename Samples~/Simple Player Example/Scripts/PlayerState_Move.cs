@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FGT.Prototypes.StateMachine.Demo
+namespace FGT.Prototypes.SimpleStateMachine.Demo
 {
     public class PlayerState_Move : IState
     {
