@@ -7,6 +7,7 @@ namespace FGT.Prototypes.SimpleStateMachine
     {
         IState _currentState;
         Dictionary<string, IState> _states = new Dictionary<string, IState>();
+        IState _newState;
 
         public void AddState(string stateName, IState state)
         {
@@ -18,17 +19,32 @@ namespace FGT.Prototypes.SimpleStateMachine
         {
             if (!_states.ContainsKey(stateName))
             {
-                Debug.Log($">>>> statemachine does not contain state: {stateName}");
+                Debug.LogWarning($">>>> statemachine does not contain state: {stateName}");
                 return;
             }
 
-            _currentState?.Exit();
-            _currentState = _states[stateName];
-            _currentState.Enter();
+            _newState = _states[stateName];
+            if (_currentState == null)
+                _currentState = _newState;
         }
 
         public void Update()
         {
+            
+            if (_currentState == null)
+            {
+                Debug.LogWarning($">>>> _currentState == null. Can't Update");
+                return;
+            }
+
+            if (_newState != null &&
+                _newState != _currentState)
+            {
+                _currentState?.Exit();
+                _currentState = _newState;
+                _currentState.Enter();
+            }
+
             _currentState.Execute();
         }
     }

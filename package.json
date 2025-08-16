@@ -1,7 +1,7 @@
 
 {
     "name": "fgt.prototypes.statemachine",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "FGT - Prototypes - StateMachine",
     "description": "Fast prototyping tool to add a simple finite state machine to your game prototype.",
     "licensesUrl": "https://opensource.org/licenses/MIT",
