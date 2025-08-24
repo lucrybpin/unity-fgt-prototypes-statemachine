@@ -42,7 +42,9 @@ namespace FGT.Prototypes.SimpleStateMachine
             {
                 _currentState?.Exit();
                 _currentState = _newState;
+                _newState = null;
                 _currentState.Enter();
+                return;
             }
 
             _currentState.Execute();
